@@ -7,8 +7,6 @@ self.addEventListener('install', (event) => {
     .then((cache) => {
       return cache.addAll([
         "/",
-        "/index.html",
-        "/restaurant.html",
         "/css/styles.css",
         "/js/dbhelper.js",
         "/js/main.js",
@@ -29,12 +27,22 @@ self.addEventListener('install', (event) => {
     })
   );
 });
+
 self.addEventListener('fetch', (event) => {
   event.respondWith(
     caches
       .match(event.request)
       .then((response)=> {
-        return response || fetch(event.request);
+        return response || fetch(event.request).then((fetched)=>{
+          return caches.open(`restaurant-${cacheVersion}`).then((cache)=>{
+            cache.put(event.request, fetched.clone());
+            return fetched;
+          })
+        });
+      })
+      .catch((err)=>{
+        console.log(err)
+        return new Response("Sorry, something seemed to have gone wrong. Check console for more info.");
       })
   );
 });

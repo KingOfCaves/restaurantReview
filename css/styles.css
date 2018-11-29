@@ -377,7 +377,7 @@ nav h1 a {
   }
   #restaurant-address {
     text-align: center;
-  } 
+  }
 }
 
 @media screen and (max-width: 800px){
@@ -387,7 +387,7 @@ nav h1 a {
     width: 100%;
     height: 50vh;
     z-index: 0;
-  } 
+  }
   #restaurant-container, #reviews-container {
     width: 100%;
   }
