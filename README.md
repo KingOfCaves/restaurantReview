@@ -1,6 +1,4 @@
 # restaurantReview
----
-#### _Three Stage Course Material Project - Restaurant Reviews_
 
 ## Project Overview: Stage 1
 
@@ -31,3 +29,13 @@ This repository uses [leafletjs](https://leafletjs.com/) with [Mapbox](https://w
 ### Note about ES6
 
 Most of the code in this project has been written to the ES6 JavaScript specification for compatibility with modern web browsers and future-proofing JavaScript code. As much as possible, try to maintain use of ES6 in any additional JavaScript you write.
+
+## Credits
+
+### Cache and Fetch for other urls
+>
+> https://james-priest.github.io/mws-restaurant-stage-1/stage1.html#65-cache-assets-on-fetch >> explains how to cache   from the network if it isn't already in the cache
+>
+> https://developers.google.com/web/ilt/pwa/lab-caching-files-with-service-worker
+>
+> Udacity's knowledge section for students

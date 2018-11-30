@@ -1,12 +1,18 @@
 @charset "utf-8";
 /* CSS Document */
 
+:root {
+  --color-1: #333;
+  --color-2: #ff7300;
+  --color-3: #2e2e2e;
+  --color-4: #f3f3f3;
+}
 
 
 body,td,th,p{
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 10pt;
-	color: #333;
+	color: var(--color-1);
 	line-height: 1.5;
 }
 .wrapper {
@@ -21,14 +27,14 @@ body {
 ul, li {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 10pt;
-	color: #333;
+	color: var(--color-1);
 }
 a {
-	color: orange;
+	color: var(--color-2);
 	text-decoration: none;
 }
 a:hover, a:focus {
-	color: #3397db;
+	color: var(--color-3);
 	text-decoration: none;
 }
 a img{
@@ -42,7 +48,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 	display: block;
 }
 #maincontent {
-  background-color: #f3f3f3;
+  background-color: var(--color-4);
   min-height: 100%;
 }
 #footer {
@@ -117,7 +123,7 @@ nav h1 a {
 .filter-options {
   width: 100%;
   height: 50px;
-  background-color: #3397DB;
+  background-color: var(--color-3);
   align-items: center;
 
   display: flex;
@@ -148,7 +154,7 @@ nav h1 a {
 
 /* ====================== Restaurant Listing ====================== */
 #restaurants-list {
-  background-color: #f3f3f3;
+  background-color: var(--color-4);
   list-style: outside none none;
   margin: 0;
   padding: 30px 15px 60px;
@@ -176,7 +182,7 @@ nav h1 a {
   min-height: 248px;
   min-width: 100%;
 }
-#restaurants-list li h1 {
+#restaurants-list li h3 {
   color: #f18200;
   font-family: Arial,sans-serif;
   font-size: 14pt;
@@ -191,7 +197,7 @@ nav h1 a {
   font-size: 11pt;
 }
 #restaurants-list li a {
-  background-color: orange;
+  background-color: var(--color-2);
   border-bottom: 3px solid #eee;
   color: #fff;
   display: inline-block;
@@ -262,7 +268,7 @@ nav h1 a {
   text-align: center;
 }
 #restaurant-cuisine {
-  background-color: #333;
+  background-color: var(--color-1);
   color: #ddd;
   font-size: 12pt;
   font-weight: 300;
@@ -296,7 +302,7 @@ nav h1 a {
 }
 #reviews-list li {
   background-color: #fff;
-    border: 2px solid #f3f3f3;
+  border: 2px solid var(--color-4);
   display: block;
   list-style-type: none;
   margin: 0 auto;
