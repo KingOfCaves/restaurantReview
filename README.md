@@ -1,4 +1,4 @@
-# restaurantReview
+# wills-restaurant-review
 
 ## Project Overview: Stage 1
 
